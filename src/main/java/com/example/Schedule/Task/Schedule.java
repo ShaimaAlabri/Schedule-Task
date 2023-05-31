@@ -131,4 +131,11 @@ public void runTask17() {
 
         System.out.println("Task executed runs a job every hour but only on even-numbered days of the month");
     }
+//    Problem 20: Write a CRON expression that runs a job every 5 minutes but only between 9:00 AM and 6:00 PM on weekends.
+@Scheduled(cron = "0 */5 9-18 */2 * 5-6")
+public void runTask120() {
+
+    System.out.println("Task executed runs a job every 5 minutes but only between 9:00 AM and 6:00 PM on weekends.");
+}
+
     }

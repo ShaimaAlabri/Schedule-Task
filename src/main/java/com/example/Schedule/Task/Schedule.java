@@ -106,5 +106,11 @@ public void runTask15() {
 
     System.out.println("Task executed every  10 minutes but only between 9:00 AM and 6:00 PM on weekdays.");
 }
+//Problem 16: Write a CRON expression that runs a job every hour during the first half of the month.
+    @Scheduled(cron = "0 0 * 1-15 * *")
+    public void runTask16() {
+
+        System.out.println("Task executed every our during the first half of the month.");
+    }
 
     }

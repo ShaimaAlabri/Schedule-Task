@@ -15,8 +15,13 @@ public class Schedule {
 @Scheduled(cron = "0 0 * * * *")
 public void runTask1() {
     // Your task logic here
-    System.out.println("Task executed every 5 minutes");
+    System.out.println("Task executed every every hour");
 }
-
+//Problem 3: Write a CRON expression that runs a job every day at 2:30 PM.
+    @Scheduled(cron = "0 30 2 * * *")
+    public void runTask2() {
+        // Your task logic here
+        System.out.println("Task executed every day at 2:30 PM");
+    }
 
 }

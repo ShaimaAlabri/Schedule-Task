@@ -112,5 +112,13 @@ public void runTask15() {
 
         System.out.println("Task executed every our during the first half of the month.");
     }
+//    Problem 17: Write a CRON expression that runs a job every 5 minutes on weekdays and every 15 minutes on weekends.
+@Scheduled(cron = "0 */5 * * * 0-4")
+@Scheduled(cron = "0 */15 * * * 5-6")
+public void runTask17() {
+
+    System.out.println("Task executed every 5 minutes on weekdays and every 15 minutes on weekends");
+}
+
 
     }

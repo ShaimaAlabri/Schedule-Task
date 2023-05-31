@@ -156,5 +156,14 @@ public void runTask23() {
 
     System.out.println("Task executed runs a job at 8:15 AM every weekday except Friday. ");
 }
+//Problem 24: Write a CRON expression that runs a job at 10:00 PM every day in the month of December.
+    @Scheduled(cron = "0 0 22 * 12 *")
+    public void runTask24() {
+
+        System.out.println("Task executed runs a job  at 10:00 PM every day in the month of December. ");
+    }
+//
+
+
 
     }

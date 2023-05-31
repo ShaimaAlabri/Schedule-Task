@@ -180,7 +180,14 @@ public void runTask26() {
 @Scheduled(cron = "0 */10 9-17 * * 1-5")
 public void runTask27() {
 
-    System.out.println("Task executed runs a job  every 10 minutes on weekdays between 9:00 AM  ");
+    System.out.println("Task executed runs a job  every 10 minutes on weekdays between 9:00 AM and 5:00 PM. ");
+}
+//Problem 28: Write a CRON expression that runs a job at 12:00 PM on the 3rd Wednesday of every
+//month.
+@Scheduled(cron = "0 0 12 * * 3#3")
+public void runTask28() {
+
+    System.out.println("Task executed runs a job  at 12:00 PM on the 3rd Wednesday of every month. ");
 }
 
 

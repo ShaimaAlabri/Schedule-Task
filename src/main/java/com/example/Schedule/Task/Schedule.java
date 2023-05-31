@@ -29,5 +29,13 @@ public void runTask1() {
 
         System.out.println("Task executed  every Monday at 8:00 AM");
     }
+//    Problem 5: Write a CRON expression that runs a job every month on the first day of the month at 3:00
+//AM.
+    @Scheduled(cron = "0 00 3 1 * *")
+    public void runTask4() {
+
+        System.out.println("Task executed every month on the first day of the month at 3:00 AM");
+    
+    }
 
 }

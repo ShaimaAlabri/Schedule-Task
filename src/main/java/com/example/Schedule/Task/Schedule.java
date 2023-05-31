@@ -51,6 +51,14 @@ public void runTask1() {
         System.out.println("Task executed every 15 minutes between 8:00 AM and 10:45 PM every day.");
 
     }
+//    Problem 8: Write a CRON expression that runs a job every hour on weekdays between 9:00 AM and 5:00
+//PM
+    @Scheduled(cron ="0 00 9-17 * * *")
+    public void runTask7() {
+
+        System.out.println("Task executed every hour on weekdays between 9:00 AM and 5:00PM");
+
+    }
 
 
 }

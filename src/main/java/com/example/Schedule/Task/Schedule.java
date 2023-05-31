@@ -169,6 +169,13 @@ public void runTask23() {
 
         System.out.println("Task executed runs a job  at 1at the bottom of every hour (i.e., at :00 and :30 minutes past the hour) between 6:00 PM and midnight on weekdays ");
     }
+//Problem 26: Write a CRON expression that runs a job at 4:30 PM on the 1st and 15th days of every month.
+@Scheduled(cron = "0 30 16 1,15 * *")
+public void runTask26() {
+
+    System.out.println("Task executed runs a job  at at 4:30 PM on the 1st and 15th days of every month ");
+}
+
 
 
     }

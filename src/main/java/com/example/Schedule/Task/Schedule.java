@@ -78,5 +78,11 @@ public void runTask1() {
 
         System.out.println("Task executed every 30 minutes during business hours (8:00 AMto 5:00 PM) on weekdays.");
     }
+//Problem 12: Write a CRON expression that runs a job every hour on the 15th day of the month
 
+    @Scheduled(cron ="0 0 * 15 * *")
+    public void runTask11() {
+
+        System.out.println("Task executed every hour on the 15th day of the month");
+    }
     }

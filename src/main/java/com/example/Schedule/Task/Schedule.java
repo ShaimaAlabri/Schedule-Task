@@ -91,4 +91,15 @@ public void runTask12() {
 
     System.out.println("Task executed every day at 6:00 PM during daylight saving time (DST) in the United States");
 }
+
+//Problem 14: Write a CRON expression that runs a job every 5 minutes on weekdays and every 15 minutes on weekends.
+
+    @Scheduled(cron ="0 */5 * * * 1-5")
+    @Scheduled(cron="0 */15 * * * 6-7")
+    public void runTask14() {
+
+        System.out.println("Task executed every  5 minutes on weekdays and every 15 minutes on weekends.");
+    }
+
+
     }

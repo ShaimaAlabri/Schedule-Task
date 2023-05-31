@@ -45,11 +45,12 @@ public void runTask1() {
 
     }
 //    Problem 7: Write a CRON expression that runs a job every 15 minutes between 8:00 AM and 10:45 PM every day.
-    @Scheduled (cron = "0 */15 8,22 * * *")
+    @Scheduled (cron = "0 */15 8-22 * * *")
     public void runTask6() {
 
         System.out.println("Task executed every 15 minutes between 8:00 AM and 10:45 PM every day.");
 
     }
-    
+
+
 }

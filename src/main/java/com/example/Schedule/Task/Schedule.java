@@ -18,10 +18,16 @@ public void runTask1() {
     System.out.println("Task executed every every hour");
 }
 //Problem 3: Write a CRON expression that runs a job every day at 2:30 PM.
-    @Scheduled(cron = "0 30 2 * * *")
+    @Scheduled(cron = "0 30 14 * * *")
     public void runTask2() {
         // Your task logic here
         System.out.println("Task executed every day at 2:30 PM");
+    }
+//    Problem 4: Write a CRON expression that runs a job every Monday at 8:00 AM.
+    @Scheduled(cron = "0 00 8 * * 1")
+    public void runTask3() {
+
+        System.out.println("Task executed  every Monday at 8:00 AM");
     }
 
 }

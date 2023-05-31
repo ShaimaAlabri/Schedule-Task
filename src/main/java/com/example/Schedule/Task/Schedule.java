@@ -143,4 +143,13 @@ public void runTask21() {
 
     System.out.println("Task executed runs a job at 3:30 AM every day except Saturday and Sunday.");
 }
+
+//Problem 22: Write a CRON expression that runs a job at the top of every hour between 9:00 AM and 5:00 PM on the 15th day of the month.
+    @Scheduled(cron = "0 0 9-17 15 * *")
+    public void runTask22() {
+
+        System.out.println("Task executed runs a job at 3:30 AM every day except Saturday and Sunday.");
+    }
+
+
     }

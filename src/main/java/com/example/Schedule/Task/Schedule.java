@@ -119,6 +119,11 @@ public void runTask17() {
 
     System.out.println("Task executed every 5 minutes on weekdays and every 15 minutes on weekends");
 }
+//Problem 18: Write a CRON expression that runs a job at 11:30 PM every Friday the 13th.
+    @Scheduled(cron = "0 30 23 13 * 5")
+    public void runTask18() {
 
+        System.out.println("Task executed runs a job at 11:30 PM every Friday the 13th");
+    }
 
     }
